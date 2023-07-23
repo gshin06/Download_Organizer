@@ -1,5 +1,6 @@
 import os
 import shutil
+import time
 
 # Folder paths
 pic_folder = r"c:\Users\shing\OneDrive\Desktop\Stuff\Pictures"
@@ -26,3 +27,4 @@ for file in os.listdir(download_folder):
         shutil.move(path, zip_folder)
     else:
         shutil.move(path, other_folder)
+    time.sleep(300)
